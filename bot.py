@@ -31,7 +31,7 @@ class AppState:
         self.known_events: set[str] = set()
         self.notified_available: set[str] = set()
         self.booked_events: set[str] = set()
-        self.auto_book: bool = True
+        self.auto_book: bool = False
         self.http_session: aiohttp.ClientSession | None = None
         self.scraper: BorisBiletScraper | None = None
         self.booker: AutoBooker | None = None
